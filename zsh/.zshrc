@@ -123,5 +123,16 @@ function ygit() {
     git push
 }
 
+function auto_activate_venv() {
+    if [[ -d "./venv" && -z "$VIRTUAL_ENV" ]]; then
+        echo "Activating virtual environment..."
+        source "./venv/bin/activate"
+    fi
+}
+
+# 當目錄改變使用函數
+autoload -U add-zsh-hook
+add-zsh-hook chpwd auto_activate_venv
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
