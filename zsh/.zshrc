@@ -12,7 +12,8 @@ fi
 export ZSH="$HOME/.oh-my-zsh"
 export EDITOR="nvim"
 export VISUAL="nvim"
-export PATH="/usr/local/opt/node/bin:$PATH"
+export PATH="/opt/homebrew/opt/node/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+# export PATH="/usr/local/opt/node/bin:$PATH" (Kitusne)
 
 
 # Set name of the theme to load --- if set to "random", it will
@@ -136,3 +137,4 @@ add-zsh-hook chpwd auto_activate_venv
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+source ~/powerlevel10k/powerlevel10k.zsh-theme
