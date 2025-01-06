@@ -28,6 +28,10 @@ brew "nghttp2"
 brew "node", link: false
 # Platform built on V8 to build network applications
 brew "node@18"
+# Library: Numpy
+brew "numpy"
+# pyenv
+brew "ptpython"
 # Python version management
 brew "pyenv"
 # Interpreted, interactive, object-oriented programming language
