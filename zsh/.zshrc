@@ -131,6 +131,13 @@ function auto_activate_venv() {
     fi
 }
 
+# 引用API
+# 在 .zshrc 中加入以下內容
+if [ -f ~/.zsh_api_keys ]; then
+  source ~/.zsh_api_keys
+fi
+
+
 # 當目錄改變使用函數
 autoload -U add-zsh-hook
 add-zsh-hook chpwd auto_activate_venv
@@ -138,3 +145,5 @@ add-zsh-hook chpwd auto_activate_venv
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+
