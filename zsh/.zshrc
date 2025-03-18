@@ -132,9 +132,9 @@ function auto_activate_venv() {
 }
 
 # 引用API
-# 在 .zshrc 中加入以下內容
-if [ -f ~/.zsh_api_keys ]; then
-  source ~/.zsh_api_keys
+if [ -f ~/dotfiles/zsh/.zsh_api_keys ]; then
+  source ~/dotfiles/zsh/.zsh_api_keys
+
 fi
 
 
