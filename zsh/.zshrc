@@ -114,6 +114,8 @@ alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias vim="nvim"
 alias wp='cd ~/r20/WP'
 alias notes='cd ~/r20/Notes/'
+alias calibre="/Applications/calibre.app/Contents/MacOS/ebook-convert"
+
 
 function mkcd() {
     mkdir -p "$@" && cd "$_";
@@ -147,3 +149,8 @@ add-zsh-hook chpwd auto_activate_venv
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 
+
+# Added by Windsurf
+export PATH="/Users/vikhuang/.codeium/windsurf/bin:$PATH"
+
+. "$HOME/.local/bin/env"
